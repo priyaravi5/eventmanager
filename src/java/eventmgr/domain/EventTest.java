@@ -103,7 +103,7 @@ public class EventTest
 	Query query = session.createQuery( "from Event" );
 	List<Event> list = (List<Event>)query.list( );
 	tx.commit();
-        session.close();
+       session.close();
 for(Event e : list ) {
 		out.println( e.toString()+ e.getStartdate() );
 		out.println( e.getLocation() );
@@ -111,7 +111,7 @@ for(Event e : list ) {
 		for(Speaker s : e.getSpeakers() ) out.print(" "+s.getName() );
 		out.println();
 	}
-	
+	 
 }
 
     public static void main(String[] args) {
@@ -120,7 +120,7 @@ for(Event e : list ) {
 		//LocationTest.saveLocations( );
 		//saveEvents();
 		//testRetrieve();
-              /*  Session session=Factory.openSession();
+              /*Session session=Factory.openSession();
                Transaction t=session.beginTransaction();
                 Query query=session.createQuery("from Location where name=:name");
                 query.setParameter("name","Mahidol University");
@@ -135,13 +135,13 @@ for(Event e : list ) {
                 {
                     testUpdate("Java Days",(Location)list.get(0));
                 }*/
-               /* Speaker s=new Speaker("jeeva","9578918589");
+             /*  Speaker s=new Speaker("jeeva","9578918589");
                 Speaker s1=new Speaker("mani","9658741258");
                 Set<Speaker> s2=new HashSet<Speaker>();
                 s2.add(s);
                 s2.add(s1);
                 addSpeakers("Java Days",s2);*/
-                testRetrieve1();
+               testRetrieve1();
                 
 	}
 

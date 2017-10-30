@@ -80,10 +80,10 @@ if ( list.size() == 0 ) out.print("No location named "+name);
     }
     public static void main(String args[])
     {
-                saveLocations();
-		testRetrieve();
-		testUpdate("Kasetsart University", "Kampaengsaen");
-		testRetrieve();
+                //saveLocations();
+		//testRetrieve();
+		//testUpdate("Kasetsart University", "Kampaengsaen");
+		//testRetrieve();
 
     }
 }
