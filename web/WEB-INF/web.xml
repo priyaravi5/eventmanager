@@ -4,10 +4,7 @@
         <servlet-name>NewServlet</servlet-name>
         <servlet-class>eventmgr.domain.NewServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>NewServlet</servlet-name>
-        <url-pattern>/NewServlet</url-pattern>
-    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30
