@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC ...remainder not shown... >
+<hibernate-mapping package="eventmgr.domain">
+<class name="Event" table="EVENTS">
+  	<id name="id">
+  		<generator class="native"/>
+  	</id>
+  	<property name="name"/>
+  	<property name="startDate" column="start_date"
+			type="timestamp"/>
+	<many-to-one name="location" column="location_id"
+			cascade="save-update">
+  </class>
+</hibernate-mapping>
