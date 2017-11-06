@@ -135,13 +135,13 @@ for(Event e : list ) {
                 {
                     testUpdate("Java Days",(Location)list.get(0));
                 }*/
-             /*  Speaker s=new Speaker("jeeva","9578918589");
-                Speaker s1=new Speaker("mani","9658741258");
+               /*Speaker s=new Speaker("priya","7373888647");
+                Speaker s1=new Speaker("pavi","9658431512");
                 Set<Speaker> s2=new HashSet<Speaker>();
                 s2.add(s);
                 s2.add(s1);
                 addSpeakers("Java Days",s2);*/
-               testRetrieve1();
+            //  testRetrieve1();
                 
 	}
 
